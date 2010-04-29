@@ -1,0 +1,9 @@
+<div>Hello from the <b>world</b> of AJAX!</div> <!-- 1 -->
+<script type='text/javascript'>
+  function highlightWindow() {                     /* 2 */
+    var win     = Ext.getCmp('myWindow');
+    var winBody = win.body;
+    winBody.highlight();
+  }
+  highlightWindow.defer(1000);
+</script>
