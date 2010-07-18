@@ -27,6 +27,8 @@ $ git clone git://github.com/smbrant/rwt.git
 $ cd ../..
 $ ruby script/server
 
+Go to http://localhost:3000
+
 == Documentation
 
 http://www.access.net.br/projects/rwt/wiki/Reading_ExtJs_in_Action_with_the_help_of_rwt
