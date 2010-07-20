@@ -5,9 +5,13 @@ rwt_app do
     end
     menu('Chapter 2') do
       menu_item('Show div',call_view('/desktop/ch02_00_show_div'))
-      menu_item('setHeight',call_view('/desktop/ch02_01_set_height'))
-      menu_item('setSize',call_view('/desktop/ch02_02_set_size'))
-      menu_item('createChild',call_view('/desktop/ch02_03_create_child'))
+      menu_item('Set height',call_view('/desktop/ch02_01_set_height'))
+      menu_item('Set size',call_view('/desktop/ch02_02_set_size'))
+      menu_item('Create children',call_view('/desktop/ch02_03_create_child'))
+      menu_item('Remove children',call_view('/desktop/ch02_04_remove_children'))
+      menu_item('Using ajax',call_view('/desktop/ch02_05_using_ajax'))
+      menu_item('Using templates',call_view('/desktop/ch02_06_using_templates'))
+      menu_item('Advanced templates',call_view('/desktop/ch02_07_advanced_xtemplates'))
       menu_item('Clear div',call_view('/desktop/ch02_98_clear_div'))
       menu_item('Hide div',call_view('/desktop/ch02_99_hide_div'))
     end

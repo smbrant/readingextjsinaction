@@ -25,3 +25,18 @@ myDiv1.createChild({
          id   : 'removeMeLater',
          html : 'Child inserted as node 2 of myDiv1'
 }, myDiv1.dom.childNodes[3]);
+
+myDiv1.createChild({
+    tag       : 'div',
+    id        : 'child4',
+    children : {
+        tag : 'div',
+        html : 'nestedChild1'
+    }
+});
+
+myDiv1.createChild({
+    tag       : 'div',
+    id        : 'child5',
+    html: 'Child 5'
+});
