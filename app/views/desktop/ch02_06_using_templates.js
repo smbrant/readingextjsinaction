@@ -1,6 +1,9 @@
 /* 
  * Changed a bit to use div1 instead document.body
  */
+
+Ext.get('div1').dom.innerHTML=''; /* start with a clean div */
+
 var myTpl = new Ext.Template("<div>Hello {0}.</div>");
 myTpl.append(Ext.get('div1'), ['Marjan']);
 myTpl.append(Ext.get('div1'), ['Michael']);

@@ -15,6 +15,15 @@ rwt_app do
       menu_item('Clear div',call_view('/desktop/ch02_98_clear_div'))
       menu_item('Hide div',call_view('/desktop/ch02_99_hide_div'))
     end
+    menu('Chapter 3') do
+      menu_item('Layouts (in ruby)',call_view('/desktop/ch03_01_layouts_in_ruby'))
+      menu_item('Events',call_view('/desktop/ch03_02_events'))
+      menu_item('Events and event listeners',call_view('/desktop/ch03_03_events_and_event_listeners'))
+      menu_item('Xtypes and Component Manager',call_view('/desktop/ch03_04_xtypes'))
+      menu_item('Lazy rendering',call_view('/desktop/ch03_05_lazy_render'))
+      menu_item('First container',call_view('/desktop/ch03_06_first_container'))
+      menu_item('Viewport container',call_view('/desktop/ch03_07_viewport_container'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))
