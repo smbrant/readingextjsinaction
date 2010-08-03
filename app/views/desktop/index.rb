@@ -24,6 +24,24 @@ rwt_app do
       menu_item('First container',call_view('/desktop/ch03_06_first_container'))
       menu_item('Viewport container',call_view('/desktop/ch03_07_viewport_container'))
     end
+    menu('Chapter 4') do
+      menu_item('First panel',call_view('/desktop/ch04_01_first_panel'))
+      menu_item('Destroy panel',call_view('/desktop/ch04_02_destroy_things'))
+      menu_item('Complex panel',call_view('/desktop/ch04_03_complex_panel'))
+      menu_item('Animated window',call_view('/desktop/ch04_04_animated_window'))
+      menu_item('Rigid modal window',call_view('/desktop/ch04_05_rigid_modal_window'))
+      menu('MessageBox') do
+        menu_item('Basic',call_view('/desktop/ch04_06_messagebox'))
+        menu_item('Advanced 1',call_view('/desktop/ch04_06_messagebox_1'))
+        menu_item('Advanced 2',call_view('/desktop/ch04_06_messagebox_2'))
+        menu_item('Wait...',call_view('/desktop/ch04_06_messagebox_wait'))
+        menu_item('Progress bar',call_view('/desktop/ch04_06_messagebox_wait_2'))
+      end
+      menu('TabPanel') do
+        menu_item('First one',call_view('/desktop/ch04_07_tabpanel'))
+        menu_item('Scrollable tabs',call_view('/desktop/ch04_08_scrollable_tabs'))
+      end
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))
