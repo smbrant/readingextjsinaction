@@ -1,7 +1,9 @@
 rwt_app do
   toolbar(:place=>'desktop') do
+    menu_item('|Clear tabs|',call_view('/desktop/ch01_01_clear_code_view'))
     menu('Chapter 1') do
       menu_item('Creating helloWorld.js',call_view('/desktop/ch01_02_hello_world'))
+
     end
     menu('Chapter 2') do
       menu_item('Show div',call_view('/desktop/ch02_00_show_div'))
@@ -51,4 +53,38 @@ rwt_app do
       menu_item('Access Consultoria Ltda',function("window.open('http://www.access.net.br/')"))
     end
   end
+
+  tabpanel( :renderTo=>'code-view',
+            :resizeTabs=>true,
+            :enableTabScroll=>true,
+            :id=>'codeview',
+            :activeTab=>0,
+            :width=>'auto',
+#            :minTabWidth=>150,
+            :tabWidth=>100,
+#            :autoHeight=>true,
+#            :height=>'auto',
+            :height=>800,
+            :border=>false,
+            :plain=>true,
+            :hidden=>false,
+            :defaults=>{:autoScroll=>true},
+            :items=>[{:title=>'Scratch pad',
+                :closable=>false,
+                :autoLoad=>{:url=>"/scratch_pad.html"}
+              }]
+  )
+
+
+# title= code.split('/').last
+
+  Rwt << "function show_code(chapter,source){"
+  Rwt <<   "var cv=Ext.getCmp('codeview');"
+  Rwt <<   "var n=cv.items.length;"
+  Rwt <<   "var rs=cv.items;"
+  Rwt <<   "var found=false;"
+  Rwt <<   "for(i=0;i<n;++i) {if(rs.items[i].code==source){found=true}};"
+#  Rwt <<   "if(!found){Ext.getCmp('codeview').add({title:'#{title}',code:'#{source}',closable:true,autoLoad:{url:'/code/show/#{source}'}}).show();}"
+  Rwt <<   "if(!found){Ext.getCmp('codeview').add({title:chapter,tabTip:source,code:source,closable:true,autoLoad:{url:'/code/show/'+source}}).show();}"
+  Rwt << "};"
 end

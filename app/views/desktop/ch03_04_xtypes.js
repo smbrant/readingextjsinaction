@@ -1,3 +1,8 @@
+/*
+ *
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch3" target="_blank">Chapter 3</a>
+ *
+ */
 var panel1 = {
     xtype : 'panel',
     title : 'Plain Panel',
@@ -8,6 +13,7 @@ var panel2 = {
     html : 'Panel with <b>no</b> xtype specified'
 };
 new Ext.Window({
+    x: 200,
     width: 200,
     height: 150,
     title: 'Accordion window',
@@ -24,6 +30,7 @@ new Ext.Window({
 
 /* Or */
 new Ext.Window({
+    x:450,
     width: 200,
     height: 150,
     title: 'Accordion window 2',
@@ -44,3 +51,13 @@ new Ext.Window({
         }
     ]
 }).show();
+
+
+
+
+
+
+
+
+
+show_code("section 3.2.1","app/views/desktop/ch03_04_xtypes.js");

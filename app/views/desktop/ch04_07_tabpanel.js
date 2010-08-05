@@ -1,4 +1,6 @@
 /*
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
+ *
  * I don't like to use id's. The problem is that if you instantiate the panel or
  * and other component more than once with the same id you start having problems.
  *
@@ -86,3 +88,13 @@ new Ext.Window({
     layout : 'fit',
     items : tabPanel
 }).show();
+
+
+
+
+
+
+
+
+
+show_code('section 4.3.2','app/views/desktop/ch04_07_tabpanel.js');

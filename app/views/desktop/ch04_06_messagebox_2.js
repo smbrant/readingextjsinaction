@@ -1,4 +1,5 @@
 /* 
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
  * 
  */
 
@@ -18,4 +19,43 @@ Ext.Msg.show({
     buttons:Ext.MessageBox.YESNOCANCEL,
     fn:myCallback,
     icon:Ext.MessageBox.ERROR
-})
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show_code('section 4.2.3','app/views/desktop/ch04_06_messagebox_2.js');

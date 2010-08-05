@@ -1,3 +1,7 @@
+/*
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
+ *
+ */
 Ext.MessageBox.show({
     title: 'Hold on there cowboy!',
     msg: "We're doing something...",
@@ -25,3 +29,37 @@ for (var i = 1; i < 7; i++){
     setTimeout(updateFn(i), i * 500);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show_code('section 4.2.4','app/views/desktop/ch04_06_messagebox_wait_2.js');

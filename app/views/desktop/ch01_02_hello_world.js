@@ -1,5 +1,9 @@
+/*
+ *
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch1" target="_blank">Chapter 1</a>
+ *
+*/
 var win = new Ext.Window({
-  id       : 'myWindow',
   title    : 'My first Ext JS Window',
   width    : 300,
   height   : 150,
@@ -10,3 +14,49 @@ var win = new Ext.Window({
       }
 });
 win.show();                /* 3 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show_code('section 1.6','app/views/desktop/ch01_02_hello_world.js');

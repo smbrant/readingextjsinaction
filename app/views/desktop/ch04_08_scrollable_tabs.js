@@ -1,7 +1,9 @@
 /*
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
  * 
  */
 Rwt.tb.hide(); /* hide the toolbar */
+Ext.getCmp('codeview').hide(); /* and the code view panel */
 
 Ext.QuickTips.init();
 
@@ -27,6 +29,8 @@ viewport= new Ext.Viewport({
                 handler:function(){
                     viewport.destroy();
                     Rwt.tb.show();  /* show the toolbar again */
+                    Ext.getCmp('codeview').show(); /* and the code view panel */
+                    Ext.getCmp('codeview').doLayout();
                 }
             }
             ]
@@ -47,3 +51,13 @@ viewport= new Ext.Viewport({
     }
 }).defer(500);
 
+
+
+
+
+
+
+
+
+
+show_code("section 4.3.4","app/views/desktop/ch04_08_scrollable_tabs.js");

@@ -1,4 +1,6 @@
 /*
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
+ *
  * Listing 4.3 Building an animated window, with small refactoring
  */
 var win;
@@ -18,7 +20,7 @@ var newWindow = function(btn) {
 
 new Ext.Window({
     title: 'Animated window',
-    x: 50, y: 50,
+    x: 150, y: 300,
     items:[
         new Ext.Button({
             text: 'Open my Window',
@@ -31,3 +33,39 @@ new Ext.Window({
 }).show();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show_code('section 4.2','app/views/desktop/ch04_04_animated_window.js');

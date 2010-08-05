@@ -1,4 +1,5 @@
 /* 
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
  * 
  */
 
@@ -20,3 +21,42 @@ Ext.MessageBox.alert(title, msg);
 var msg= 'Please enter your email address.';
 var title = 'Input Required';
 Ext.MessageBox.prompt(title, msg, myCallback);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show_code('section 4.2.2','app/views/desktop/ch04_06_messagebox.js');

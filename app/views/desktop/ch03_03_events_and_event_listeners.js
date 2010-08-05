@@ -1,4 +1,7 @@
 /*
+ *
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch3" target="_blank">Chapter 3</a>
+ *
  * Note: if you don't have firebug installed (or are not using chrome),
  * use Rwt.debug instead of console.log, e.g.
  * ...
@@ -23,7 +26,8 @@ win=new Ext.Window({
     ],
     listeners:{close:function(){
             myObservable.un('sayGoodbye', sayGoodbyeFn);
-            console.log('Listeners removed.')
+            Rwt.debug('Listeners removed.');
+            console.log('Listeners removed.');
     }}
 });
 win.show();
@@ -39,11 +43,23 @@ myObservable.addEvents({
     'sayGoodbye' : true
 });
 myObservable.on('sayHello', function() {
+    Rwt.debug('Hello stranger');
     console.log('Hello stranger');
 });
 myObservable.fireEvent('sayHello');
 
 var sayGoodbyeFn = function(firstName, lastName) {
+    Rwt.debug('Goodbye ' + firstName + ' ' + lastName + '!');
     console.log('Goodbye ' + firstName + ' ' + lastName + '!');
 };
 myObservable.on('sayGoodbye', sayGoodbyeFn);
+
+
+
+
+
+
+
+
+
+show_code("section 3.1.6","app/views/desktop/ch03_03_events_and_event_listeners.js");

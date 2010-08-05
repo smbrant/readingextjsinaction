@@ -1,4 +1,6 @@
 /*
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
+ *
  * 4.1.1 Building a complex panel
  */
 
@@ -43,20 +45,22 @@ var myPanel = new Ext.Panel({
     id:'panel1',
     title:'Ext Panels rock!',
     collapsible :true,
-    renderTo:Ext.getBody(),
+    renderTo:'div1',
     tbar:myTopToolbar,
     bbar:myBottomToolbar,
     html: 'My first Toolbar Panel!'
 });
 
-/* Better with a window. To try, comment the panel.
-new Ext.Window({
-    width:200,
-    height:150,
-    title:'Ext Panels rock!',
-    collapsible :true,
-    tbar:myTopToolbar,
-    bbar:myBottomToolbar,
-    html: 'My first Toolbar Panel!'
-}).show();
-*/
+
+
+
+
+
+
+
+
+
+
+show_code('section 4.1.1','app/views/desktop/ch04_01_first_panel.js');
+Ext.getCmp('codeview').activate(0);
+Ext.get('div1').show();

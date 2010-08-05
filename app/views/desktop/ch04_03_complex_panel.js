@@ -1,4 +1,6 @@
 /*
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
+ *
  * Listing 4.2 Adding buttons and tools to our existing panel
  */
 
@@ -72,3 +74,13 @@ new Ext.Window({  /* instead of panel */
     }
     ]
 }).show();
+
+
+
+
+
+
+
+
+
+show_code('section 4.1.1','app/views/desktop/ch04_03_complex_panel.js');

@@ -1,3 +1,8 @@
+/*
+ *
+ * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch3" target="_blank">Chapter 3</a>
+ *
+ */
 var myPanel = new Ext.Panel({
     height : 50,
     width : 150,
@@ -14,8 +19,49 @@ new Ext.Window({
         new Ext.Button({
                 xtype : 'button',
                 text : 'Render panel...',
-                handler:function(){myPanel.render(Ext.get('divTest'))}
+                handler:function(){
+                    Ext.getCmp('codeview').activate(0);
+                    Ext.get('div1').show();
+                    Ext.get('div1').dom.innerHTML='';
+                    Ext.get('div1').setHeight(100);
+
+                    myPanel.render(Ext.get('div1'));
+                }
         })
-    ],
-    html:"<div id='divTest'></div>"
+    ]
 }).show();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show_code("section 3.2.2","app/views/desktop/ch03_05_lazy_render.js");
