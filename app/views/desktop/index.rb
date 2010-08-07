@@ -44,6 +44,20 @@ rwt_app do
         menu_item('Scrollable tabs',call_view('/desktop/ch04_08_scrollable_tabs'))
       end
     end
+    menu('Chapter 5') do
+      menu_item('Container layout',call_view('/desktop/ch05_01_container_layout'))
+      menu_item('Anchor layout',call_view('/desktop/ch05_02_anchor_layout'))
+      menu_item('Anchor layout 2',call_view('/desktop/ch05_02_anchor_layout_1'))
+      menu_item('Form layout',call_view('/desktop/ch05_03_form_layout'))
+      menu_item('Absolute layout',call_view('/desktop/ch05_04_absolute_layout'))
+      menu_item('Fit layout',call_view('/desktop/ch05_05_fit_layout'))
+      menu_item('Accordion layout',call_view('/desktop/ch05_06_accordion_layout'))
+      menu_item('Card layout',call_view('/desktop/ch05_07_card_layout'))
+      menu_item('Column layout',call_view('/desktop/ch05_08_column_layout'))
+      menu_item('HBox layout',call_view('/desktop/ch05_09_hbox_layout'))
+      menu_item('Table layout',call_view('/desktop/ch05_10_table_layout'))
+      menu_item('Border layout',call_view('/desktop/ch05_11_border_layout'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))

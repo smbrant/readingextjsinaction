@@ -1,5 +1,4 @@
 /* 
-/*
  * <a href="http://www.access.net.br/projects/extjsinaction/wiki/Ch4" target="_blank">Chapter 4</a>
  *
  */
