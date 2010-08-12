@@ -58,6 +58,11 @@ rwt_app do
       menu_item('Table layout',call_view('/desktop/ch05_10_table_layout'))
       menu_item('Border layout',call_view('/desktop/ch05_11_border_layout'))
     end
+    menu('Chapter 6') do
+      menu_item('Text fields',call_view('/desktop/ch06_01_text_fields'))
+      menu_item('ComboBox fields ',call_view('/desktop/ch06_02_combo_boxes'))
+      menu_item('Html editor ',call_view('/desktop/ch06_03_html_editor'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))

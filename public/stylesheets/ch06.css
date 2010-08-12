@@ -1,0 +1,13 @@
+.combo-result-item {
+    padding: 2px;
+    border: 1px solid #FFFFFF;
+}
+.combo-name {
+    font-weight: bold;
+    font-size: 11px;
+    background-color: #FFFF99;
+}
+.combo-full-address {
+    font-size: 11px;
+    color: #666666;
+}
