@@ -62,6 +62,8 @@ rwt_app do
       menu_item('Text fields',call_view('/desktop/ch06_01_text_fields'))
       menu_item('ComboBox fields ',call_view('/desktop/ch06_02_combo_boxes'))
       menu_item('Html editor ',call_view('/desktop/ch06_03_html_editor'))
+      menu_item('Dates, checkboxes, radios ',call_view('/desktop/ch06_04_date_checkbox_radio'))
+      menu_item('FormPanel ',call_view('/desktop/ch06_05_form_panel'))
     end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))

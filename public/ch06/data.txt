@@ -1,0 +1,18 @@
+{
+    success : true,
+    data : {
+        firstName : "Jack",
+        lastName : "Slocum",
+        middle : "",
+        address : "1 Ext JS Corporate Way",
+        city : "Orlando",
+        state : "Florida",
+        zip : "32801",
+        home : "123 346 8832",
+        business : "832 932 3828",
+        mobile : "",
+        fax : "",
+        resume : "Skills:<br><ul><li>Java Developer</li><li>Ext JS Senior Core developer</li></ul>",
+        bio : " Jack is a stand-up kind of guy.<br>"
+        }
+}
