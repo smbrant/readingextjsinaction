@@ -236,5 +236,7 @@ new Ext.Window({
 
 
 
-
-show_code("sections 6.6","app/views/desktop/ch06_05_form_panel.js");
+show_code("success.true.txt","public/ch06/success.true.txt");
+show_code("success.false.txt","public/ch06/success.false.txt");
+show_code("data.txt","public/ch06/data.txt");
+show_code("section 6.6","app/views/desktop/ch06_05_form_panel.js");
