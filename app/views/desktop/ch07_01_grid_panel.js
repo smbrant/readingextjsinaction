@@ -66,4 +66,4 @@ new Ext.Window({
 
 
 
-show_code("sections 7.3","app/views/desktop/ch07_01_grid_panel.js");
+show_code("section 7.3","app/views/desktop/ch07_01_grid_panel.js");

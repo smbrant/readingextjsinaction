@@ -192,4 +192,4 @@ Ext.StoreMgr.get('ourRemoteStore').load({
 
 
 
-show_code("sections 7.4","app/views/desktop/ch07_02_adv_grid_panel.js");
+show_code("section 7.4","app/views/desktop/ch07_02_adv_grid_panel.js");
