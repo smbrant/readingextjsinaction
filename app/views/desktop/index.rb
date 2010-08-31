@@ -71,6 +71,8 @@ rwt_app do
     end
     menu('Chapter 8') do
       menu_item('EditorGridPanel',call_view('/desktop/ch08_01_editor_grid_panel'))
+      menu_item('EditorGridPanel CRUD',call_view('/desktop/ch08_02_editor_grid_crud'))
+      menu_item('EditorGridPanel CRUD, data writer',call_view('/desktop/ch08_03_editor_grid_data_writer'))
     end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
