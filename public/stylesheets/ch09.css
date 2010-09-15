@@ -1,0 +1,42 @@
+.combo-result-item {
+    padding: 2px;
+    border: 1px solid #FFFFFF;
+}
+.combo-name {
+    font-weight: bold;
+    font-size: 11px;
+    background-color: #FFFF99;
+}
+.combo-full-address {
+    font-size: 11px;
+    color: #666666;
+}
+.emplWrap {
+    border: 1px #999999 solid;
+    margin : 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #ffffcc;
+    padding-bottom: 3px;
+}
+.emplSelected {
+    border: 1px #66ff66 solid;
+    background-color: #ccffcc;
+    cursor: pointer;
+}
+.emplOver {
+    border: 1px #9999ff solid;
+    background-color: #ccccff;
+    cursor: pointer;
+}
+.emplName {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #333333;
+}
+.title {
+    margin-left: 5px;
+    font-weight: bold;
+}

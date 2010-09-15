@@ -74,6 +74,9 @@ rwt_app do
       menu_item('EditorGridPanel CRUD',call_view('/desktop/ch08_02_editor_grid_crud'))
       menu_item('EditorGridPanel CRUD, data writer',call_view('/desktop/ch08_03_editor_grid_data_writer'))
     end
+    menu('Chapter 9') do
+      menu_item('DataView',call_view('/desktop/ch09_01_data_view'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))
