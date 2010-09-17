@@ -76,6 +76,7 @@ rwt_app do
     end
     menu('Chapter 9') do
       menu_item('DataView',call_view('/desktop/ch09_01_data_view'))
+      menu_item('ListView',call_view('/desktop/ch09_02_data_view'))
     end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
