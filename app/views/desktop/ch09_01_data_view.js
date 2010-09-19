@@ -69,21 +69,20 @@ Ext.getCmp('codeview').hide();
                title  : 'Employees',
                frame  : true,
                layout : 'fit',
-               items  : [employeeDv,
-                    {
+               items  : [employeeDv]
+           },
+                               {
                     xtype: 'button',
                     text:'return',
                     handler:function(){
-                    viewport.destroy();
                     Rwt.tb.show();  /* show the toolbar again */
                     Ext.getCmp('codeview').show(); /* and the code view panel */
                     Ext.getCmp('codeview').doLayout();
                 }}
-                     ]
-           }
        ]
     });
 
+    viewport.show();
 
 
 

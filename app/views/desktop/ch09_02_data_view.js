@@ -12,22 +12,22 @@ Ext.getCmp('codeview').hide();
         url : 'http://extjsinaction.com/getEmployees.php'
     });
 
-    var employeeDvStore = {
+    var employeeDvStore = new Ext.data.JsonStore({
         xtype    : 'jsonstore',
         root     : 'records',
         storeId  : 'employeeDv',
         proxy    : employeeStoreProxy,
         fields   : [
-            { name : "datehired",     mapping : "datehired" },
-            { name : "department",    mapping : "department" },
-            { name : "email",         mapping : "email" },
-            { name : "firstname",     mapping : "firstname" },
-            { name : "id",            mapping : "id" },
-            { name : "lastname",      mapping : "lastname" },
-            { name : "middle",        mapping : "middle" },
-            { name : "title",         mapping : "title" }
+            {name : "datehired",     mapping : "datehired"},
+            {name : "department",    mapping : "department"},
+            {name : "email",         mapping : "email"},
+            {name : "firstname",     mapping : "firstname"},
+            {name : "id",            mapping : "id"},
+            {name : "lastname",      mapping : "lastname"},
+            {name : "middle",        mapping : "middle"},
+            {name : "title",         mapping : "title"}
         ]
-    };
+    });
 
     var employeeDvTpl = new Ext.XTemplate(
         '<tpl for=".">',
@@ -40,31 +40,11 @@ Ext.getCmp('codeview').hide();
          '</tpl>'
     );
 
-    var employeeDv = new Ext.DataView({
-        tpl           : employeeDvTpl,
-        store         : employeeDvStore,
-        singleSelect  : true,
-        overClass     : 'emplOver',
-        selectedClass : 'emplSelected',
-        itemSelector  : 'div.emplWrap',
-        emptyText     : 'No images to display',
-        style         : 'background-color: #FFFFFF;',
-        autoScroll    : true,
-        listeners     : {
-            click : function(thisDv, index) {
-                var record = thisDv.store.getAt(index);
-                var formPanel = Ext.getCmp('updateform');
-                formPanel.selectedRecord = record;
-                formPanel.getForm().loadRecord(record);
-            }
-        }
-    });
-
-    var updateForm = {
+    var updateForm = new Ext.form.FormPanel({
         frame       : true,
-        id          : 'updateform',
+        /* id          : 'updateform', */
         labelWidth  : 70,
-        xtype       : 'form',
+        /*xtype       : 'form',*/
         defaultType : 'textfield',
         buttonAlign : 'center',
         title       : 'Update Employee Data',
@@ -104,7 +84,9 @@ Ext.getCmp('codeview').hide();
             {
                 text    : 'Save',
                 handler : function() {
-                    var formPanel = Ext.getCmp('updateform');
+                    /* Ext.getCmp('updateform'); */
+    /*                var formPanel = Ext.findParentByType('form');*/
+                    var formPanel= updateForm;
                     if (formPanel.selectedRecord) {
                         var vals  = formPanel.getForm().getValues();;
 
@@ -118,7 +100,6 @@ Ext.getCmp('codeview').hide();
                         {
                 text:'return',
                 handler:function(){
-                    viewport.destroy();
                     Rwt.tb.show();  /* show the toolbar again */
                     Ext.getCmp('codeview').show(); /* and the code view panel */
                     Ext.getCmp('codeview').doLayout();
@@ -126,7 +107,27 @@ Ext.getCmp('codeview').hide();
             }
 
         ]
-    };
+    });
+
+    var employeeDv = new Ext.DataView({
+        tpl           : employeeDvTpl,
+        store         : employeeDvStore,
+        singleSelect  : true,
+        overClass     : 'emplOver',
+        selectedClass : 'emplSelected',
+        itemSelector  : 'div.emplWrap',
+        emptyText     : 'No images to display',
+        style         : 'background-color: #FFFFFF;',
+        autoScroll    : true,
+        listeners     : {
+            click : function(thisDv, index) {
+                var record = thisDv.store.getAt(index);
+                var formPanel = updateForm; /* Ext.getCmp('updateform'); */
+                formPanel.selectedRecord = record;
+                formPanel.getForm().loadRecord(record);
+            }
+        }
+    });
 
     var listViewStore = new Ext.data.ScriptTagProxy({
         url : "http://extjsinaction.com/getDepartments.php"
@@ -139,8 +140,8 @@ Ext.getCmp('codeview').hide();
         storeId  : 'departmentDv',
         proxy    : listViewStore,
         fields   : [
-            { name : "department",   mapping : "department" },
-            { name : "numEmployees", mapping : "numEmployees" }
+            {name : "department",   mapping : "department"},
+            {name : "numEmployees", mapping : "numEmployees"}
         ]
     };
 
@@ -163,12 +164,18 @@ Ext.getCmp('codeview').hide();
             click : function(thisView, index) {
                 var record = thisView.store.getAt(index);
                 if (record) {
+                    employeeDvStore.load({
+                        params : {
+                            department : record.get('department')
+                        }
+/*
                     Ext.StoreMgr.get('employeeDv').load({
                         params : {
                             department : record.get('department')
                         }
+                            */
                     });
-                    var formPanel = Ext.getCmp('updateform');
+                    var formPanel = updateForm; /*Ext.getCmp('updateform');*/
                     delete formPanel.selectedRecord;
                     formPanel.getForm().reset();
                 }
