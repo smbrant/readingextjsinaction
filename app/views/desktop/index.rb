@@ -78,6 +78,13 @@ rwt_app do
       menu_item('DataView',call_view('/desktop/ch09_01_data_view'))
       menu_item('ListView',call_view('/desktop/ch09_02_data_view'))
     end
+    menu('Chapter 10') do
+      menu_item('Basic LineChart',call_view('/desktop/ch10_01_basic_line_chart'))
+      menu_item('Multiple series LineChart',call_view('/desktop/ch10_02_multiple_series_line_chart'))
+      menu_item('Multiple series ColumnChart',call_view('/desktop/ch10_03_multiple_series_column_chart'))
+      menu_item('Multiple series BarChart',call_view('/desktop/ch10_04_multiple_series_bar_chart'))
+      menu_item('PieChart',call_view('/desktop/ch10_05_pie_chart'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))
