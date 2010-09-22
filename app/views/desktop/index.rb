@@ -85,6 +85,10 @@ rwt_app do
       menu_item('Multiple series BarChart',call_view('/desktop/ch10_04_multiple_series_bar_chart'))
       menu_item('PieChart',call_view('/desktop/ch10_05_pie_chart'))
     end
+    menu('Chapter 11') do
+      menu_item('Static TreePanel',call_view('/desktop/ch11_01_static_tree_panel'))
+      menu_item('Dynamic TreePanel',call_view('/desktop/ch11_02_dynamic_tree_panel'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))
