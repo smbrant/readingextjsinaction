@@ -88,6 +88,7 @@ rwt_app do
     menu('Chapter 11') do
       menu_item('Static TreePanel',call_view('/desktop/ch11_01_static_tree_panel'))
       menu_item('Dynamic TreePanel',call_view('/desktop/ch11_02_dynamic_tree_panel'))
+      menu_item('CRUD TreePanel',call_view('/desktop/ch11_03_crud_tree_panel'))
     end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
