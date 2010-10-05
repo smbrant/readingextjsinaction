@@ -15,7 +15,7 @@ var onConfirmDelete = function(btn) {
         var selNode = treePanel.getSelectionModel().getSelectedNode();
 
         Ext.Ajax.request({
-            url    : 'deleteNode.php',
+            url    : '/ch11/delete_node',
             params : {
                 id      : selNode.id
             },
@@ -55,7 +55,7 @@ var onCompleteAdd = function(treeEditor, newValue, oldValue) {
 
     if (newValue.length > 0) {
         Ext.Ajax.request({
-            url    : 'createNode.php',
+            url    : '/ch11/create_node',
             params : {
                 newName : newValue
             },
@@ -116,7 +116,7 @@ var onCompleteEdit = function(treeEditor, newValue, oldValue) {
     var editNode = treeEditor.editNode;
     var editNodeId = editNode.id;
     Ext.Ajax.request({
-        url    : 'editNode.php',
+        url    : '/ch11/edit_node',
         params : {
             id      : editNodeId,
             newName : newValue
