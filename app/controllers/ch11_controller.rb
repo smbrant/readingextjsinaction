@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'net/http'
 require 'uri'
 require 'json'
@@ -58,7 +59,7 @@ class Ch11Controller < ApplicationController
 
   def delete_node
     id= params[:id]
-    newName= params[:newName]
+      newName= params[:newName]
     if !id
       d= Time.new
       id= "#{d.year}#{d.mon}#{d.day}#{d.hour}#{d.min}#{d.sec}" # distinct id
