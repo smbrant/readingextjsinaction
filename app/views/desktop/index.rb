@@ -90,6 +90,11 @@ rwt_app do
       menu_item('Dynamic TreePanel',call_view('/desktop/ch11_02_dynamic_tree_panel'))
       menu_item('CRUD TreePanel',call_view('/desktop/ch11_03_crud_tree_panel'))
     end
+    menu('Chapter 12') do
+      menu_item('Base Menu',call_view('/desktop/ch12_01_base_menu'))
+      menu_item('Buttons',call_view('/desktop/ch12_02_buttons'))
+      menu_item('Toolbars',call_view('/desktop/ch12_03_toolbars'))
+    end
     menu('Jay Garcia') do
       menu_item('ExtJs in Action',function("window.open('http://www.manning.com/garcia/')"))
       menu_item('TDG-innovations LCC',function("window.open('http://tdg-i.com/')"))
